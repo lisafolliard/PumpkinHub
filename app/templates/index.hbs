@@ -1,1 +1,27 @@
+<div class="jumbotron-overlay">
+  <div class="jumbotron text-center">
+    <h1>Pumpkin Hub</h1>
+    <p>
+      Fascinating fall fun for families!
+    </p>
+  </div>
+</div>
+
+<div class="container" id="post-container">
+  {{#each model as |post|}}
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="post clearfix">
+        <div class="img-div">
+          <img src={{post.image}} class="post-image">
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h5 class="post-title">{{post.title}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
 {{outlet}}

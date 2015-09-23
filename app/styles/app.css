@@ -10,3 +10,57 @@
     text-align: center;
     margin: auto;
 }
+
+.jumbotron {
+  background-image: url("/assets/images/jumbotron.jpeg");
+  background-size: cover;
+  color: #fff;
+  margin-top: 50px;
+  z-index: 0;
+  position: relative;
+}
+
+/*.jumbotron-overlay {
+  background-color: #fff;
+  z-index: 1000;
+  position: relative;
+}*/
+
+div.img-div{
+    height:250px;
+    width:250px;
+    overflow:hidden;
+    border-radius:50%;
+    margin: auto;
+}
+
+.img-div img{
+    -webkit-transform:translate(-50%);
+    margin-left:125px;
+    height: 100%;
+    width: auto;
+}
+
+#post-container {
+  margin-top: 50px;
+}
+
+.post {
+  margin-bottom: 50px;
+}
+
+.post-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-title {
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+}
