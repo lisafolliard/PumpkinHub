@@ -1,0 +1,12 @@
+#logo {
+  height: 35px;
+  margin: 5px;
+}
+
+.brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}

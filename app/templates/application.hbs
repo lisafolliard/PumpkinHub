@@ -1,1 +1,14 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="brand">
+      {{#link-to 'index'}}
+        <img src="/assets/images/logo.png" alt="logo" id="logo"/>
+      {{/link-to}}
+    </div>
+  </div>
+</nav>
+
 {{outlet}}
+
+
+{{#link-to 'about'}}About{{/link-to}}{{#link-to 'contact'}}Contact{{/link-to}}
