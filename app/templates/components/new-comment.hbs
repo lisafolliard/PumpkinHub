@@ -1,0 +1,19 @@
+<div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+  <h5>New Comment</h5>
+  <div>
+    <form>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        {{input value=name id="name"}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Comment</label>
+        {{input value=body id="body"}}
+      </div>
+
+      <button {{action 'saveComment'}}>Save</button>
+    </form>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="brand">
       {{#link-to 'index'}}
@@ -6,24 +6,43 @@
       {{/link-to}}
     </div>
   </div>
-</nav>
+</nav> -->
 
 <div id="nav-spacer"></div>
 
 {{outlet}}
 
-<nav class="navbar-default navbar-bottom" id="footer">
-  <div class="container">
-    <ul class="nav navbar-nav pull-right">
-      <li>
-        {{#link-to 'about'}}ABOUT{{/link-to}}
-      </li>
-      <li>
-        {{#link-to 'contact'}}CONTACT{{/link-to}}
-      </li>
-      <li>
-        {{#link-to 'admin'}}ADMIN{{/link-to}}
-      </li>
-    </ul>
-  </div>
-</nav>
+<ul class="nav nav-stacked" id="nav-icon-list">
+  <li>
+    {{#link-to 'index'}}
+      <img src="/assets/images/logo.png" alt="logo" class="nav-icon"/>
+    {{/link-to}}
+  </li><li>
+    {{#link-to 'index'}}
+      <img src="/assets/images/logo.png" alt="logo" class="nav-icon"/>
+    {{/link-to}}
+  </li><li>
+    {{#link-to 'index'}}
+      <img src="/assets/images/logo.png" alt="logo" class="nav-icon"/>
+    {{/link-to}}
+  </li><li>
+    {{#link-to 'index'}}
+      <img src="/assets/images/logo.png" alt="logo" class="nav-icon"/>
+    {{/link-to}}
+  </li>
+  <li>
+    {{#link-to 'index'}}
+      <img src="/assets/images/logo.png" alt="logo" class="nav-icon"/>
+    {{/link-to}}
+  </li>
+</ul>
+<!-- 
+<li>
+  {{#link-to 'about'}}ABOUT{{/link-to}}
+</li>
+<li>
+  {{#link-to 'contact'}}CONTACT{{/link-to}}
+</li>
+<li>
+  {{#link-to 'admin'}}ADMIN{{/link-to}}
+</li> -->

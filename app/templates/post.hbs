@@ -1,20 +1,31 @@
 <div class="container post-container">
-  <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 text-center">
-
-  </div>
-
 
   <div class="img-div">
     <img src={{model.image}} class="post-image">
   </div>
+
   <div class="row">
     <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 text-center">
+
       <h3>
         {{model.title}}
       </h3>
+
       <p>
         {{model.caption}}
       </p>
+
     </div>
   </div>
+
+  <div class="row">
+    {{new-comment saveComment="saveComment" post=model}}
+  </div>
+
+  <div class="row">
+    {{#each model.comments as |comment|}}
+      {{comment-tile comment=comment}}
+    {{/each}}
+  </div>
+
 </div>
