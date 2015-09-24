@@ -63,14 +63,14 @@ div.img-div{
 }
 
 .post-title {
-    white-space: nowrap;
-    overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    display: block;
-    text-align: center;
-    margin-top: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+  text-align: center;
+  margin-top: 2em;
 }
 
 #nav-icon-list {

@@ -1,24 +1,25 @@
 {{yield}}
-
-{{#if addNewPost}}
-    <h1>Add New Post</h1>
-    <div class="container">
-      <form>
-        <div class="form-group">
-          <label for="title">Title</label>
-          {{input value=title id="title"}}
-        </div>
-        <div class="form-group">
-          <label for="image">Image URL</label>
-          {{input value=image id="image"}}
-        </div>
-        <div class="form-group">
-          <label for="caption">Caption</label>
-          {{input value=caption id="caption"}}
-        </div>
-        <button {{action 'save'}}>Save</button>
-      </form>
-    </div>
-{{else}}
-    <button class="btn" {{action 'postFormShow'}}>New Post</button>
-{{/if}}
+<div class="container">
+  {{#if addNewPost}}
+      <h1>Add New Post</h1>
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label for="title">Title</label>
+            {{input value=title id="title"}}
+          </div>
+          <div class="form-group">
+            <label for="image">Image URL</label>
+            {{input value=image id="image"}}
+          </div>
+          <div class="form-group">
+            <label for="caption">Caption</label>
+            {{input value=caption id="caption"}}
+          </div>
+          <button {{action 'save'}}>Save</button>
+        </form>
+      </div>
+  {{else}}
+      <button class="btn" {{action 'postFormShow'}}>New Post</button>
+  {{/if}}
+</div>

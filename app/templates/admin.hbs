@@ -1,8 +1,25 @@
-{{new-post save="save"}}
+<div class="container">
+  <table>
+    <tr width>
+      <th width="80%">
+        <h3>
+          Title
+        </h3>
+      </th>
+      <th width="20%">
+      </th>
+    </tr>
+    {{#each model as |post|}}
+      <tr>
+        <td width="80%">
+          {{post.title}}
+        </td>
+        <td width="20%" class="text-center">
+          <button class="btn btn-float-right" {{action 'destroyPost' post}}>Delete</button>
+        </td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
 
-<ul>
-  {{#each model as |post|}}
-    <li>{{post.title}}</li>
-    <button class="btn" {{action 'destroyPost' post}}>Delete</button>
-  {{/each}}
-</ul>
+{{new-post save="save"}}
