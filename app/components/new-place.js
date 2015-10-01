@@ -8,6 +8,7 @@ export default Ember.Component.extend({
     },
     savePlace() {
       var params = {
+        address: this.get('address'),
         latitude: this.get('latitude'),
         longitude: this.get('longitude'),
         title: this.get('title'),
