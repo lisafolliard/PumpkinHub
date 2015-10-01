@@ -82,3 +82,8 @@ div.img-div{
 .nav-icon {
   height: 25px;
 }
+
+.map-display {
+  height: 400px;
+  width: 400px;
+}
