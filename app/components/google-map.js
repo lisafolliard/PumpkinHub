@@ -5,12 +5,20 @@ export default Ember.Component.extend({
   actions: {
     showMap(model) {
       var container = this.$('.map-display')[0];
+      var lat = model.get('latitude');
+      var lng = model.get('longitude');
+      var myLatLng = {lat: lat, lng: lng};
       var options = {
-        center: this.get('map').center(model.get('latitude'), model.get('longitude')),
+        center: this.get('map').center(lat, lng),
         zoom: 15
       };
-      debugger;
-      this.get('map').findMap(container, options);
+
+      var newMap = this.get('map').findMap(container, options);
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: newMap,
+      });
     }
   }
 });
