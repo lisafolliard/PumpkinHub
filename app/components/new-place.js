@@ -8,7 +8,8 @@ export default Ember.Component.extend({
     },
     save() {
       var params = {
-        latitue: this.get('latitude')
+        latitude: this.get('latitude'),
+        longitude: this.get('longitude'),
         title: this.get('title'),
         image: this.get('image'),
         name: this.get('name'),

@@ -1,0 +1,7 @@
+{{#each model as |place|}}
+  {{#link-to 'place' place.id}}
+    {{place-tile place=place}}
+  {{/link-to}}
+{{/each}}
+
+{{new-place savePlace="savePlace" place=model}}

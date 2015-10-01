@@ -1,1 +1,42 @@
-{{outlet}}
+
+<div class="container place-container post-container">
+
+  <div class="img-div">
+    <img src={{model.image}} class="post-image">
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 text-center">
+
+      <h3>
+        {{model.name}}
+      </h3>
+
+      <h6>
+        {{model.type}}
+      </h6>
+
+      <h6>
+        {{model.hours}}
+      </h6>
+
+      <h6>
+        by {{model.author}}
+      </h6>
+
+      <h6>
+        open from {{model.openDate}} to {{model.closeDate}}
+      </h6>
+
+      <h6>
+        {{model.type}}
+      </h6>
+
+      <p>
+        {{model.notes}}
+      </p>
+
+    </div>
+  </div>
+
+</div>
