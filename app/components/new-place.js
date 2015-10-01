@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     placeFormShow() {
       this.set('addNewPlace', true);
     },
-    save() {
+    savePlace() {
       var params = {
         latitude: this.get('latitude'),
         longitude: this.get('longitude'),
@@ -22,7 +22,7 @@ export default Ember.Component.extend({
         tag: this.get('tag')
       };
       this.set('addNewPlace', false),
-      this.sendAction('save', params);
+      this.sendAction('savePlace', params);
     }
   }
 });

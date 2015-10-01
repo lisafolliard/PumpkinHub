@@ -22,7 +22,6 @@ export default Ember.Component.extend({
 
       var newMap = this.get('map').findMap(container, options);
 
-
       var marker = new google.maps.Marker({
         position: myLatLng,
         map: newMap,
