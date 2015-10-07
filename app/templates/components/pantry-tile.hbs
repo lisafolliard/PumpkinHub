@@ -1,6 +1,6 @@
 <div class='pantry-container'>
   {{pantry.name}}
   {{pantry.description}}
-<img class='pantry-image' src={{pantry.image}}>
-
+  <img class='pantry-image' src={{pantry.image}}>
+  <button {{action 'delete' pantry}}>Delete Pantry Item</button>
 </div>
