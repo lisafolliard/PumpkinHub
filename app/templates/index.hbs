@@ -8,9 +8,14 @@
 </div>
 
 <div class="container post-container">
-  {{#each model as |post|}}
+  <!-- {{#each model as |post|}}
     {{#link-to 'post' post.id}}
       {{post-tile post=post}}
     {{/link-to}}
-  {{/each}}
+  {{/each}} -->
+
+  {{#link-to 'pantry'}}Places{{/link-to}}
+  {{#link-to 'pantry'}}Pantry{{/link-to}}
+  {{#link-to 'pantry'}}Parties{{/link-to}}
+
 </div>

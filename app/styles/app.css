@@ -87,3 +87,17 @@ div.img-div{
   height: 400px;
   width: 400px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.pantry-image {
+  width: 150px;
+  height: 150px;
+}
+
+.pantry-container {
+  margin: auto;
+  /*text-align: center;*/
+}
