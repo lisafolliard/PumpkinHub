@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('place', {path: '/place/:place_id'});
   this.route('places');
   this.route('pantry', {});
+  this.route('party', {});
 });
 
 export default Router;
