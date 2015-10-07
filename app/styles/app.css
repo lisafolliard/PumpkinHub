@@ -87,3 +87,35 @@ div.img-div{
   height: 400px;
   width: 400px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.pantry-image {
+  width: 150px;
+  height: 150px;
+}
+
+.pantry-container {
+  margin: auto;
+  text-align: center;
+}
+
+.party-container {
+  margin-top: 2%;
+}
+
+button.party.btn {
+  margin-top: 2%;
+}
+
+.form-control {
+  width: 450px;
+  margin: auto;
+  align: center;
+}
+
+button {
+  align: center;
+}

@@ -1,0 +1,10 @@
+<div class='pantry-container'>
+    <div class='row'>
+      <div class='col-xs-6'>
+      <li>{{pantry.name}}</li>
+      <li>{{pantry.description}}</li>
+      <li><img class='pantry-image' src={{pantry.image}}></li>
+      <button class='btn btn-xs'{{action 'delete' pantry}}>Delete</button>
+    </div>
+  </div>
+</div>
