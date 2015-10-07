@@ -99,9 +99,23 @@ ul {
 
 .pantry-container {
   margin: auto;
-  /*text-align: center;*/
+  text-align: center;
+}
+
+.party-container {
+  margin-top: 2%;
 }
 
 button.party.btn {
   margin-top: 2%;
+}
+
+.form-control {
+  width: 450px;
+  margin: auto;
+  align: center;
+}
+
+button {
+  align: center;
 }
