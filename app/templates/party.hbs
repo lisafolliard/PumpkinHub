@@ -1,1 +1,7 @@
-{{outlet}}
+<ul>
+  {{#each model as |party|}}
+    {{party-tile party=party destroyParty="destroyParty"}}
+  {{/each}}
+</ul>
+
+{{new-party saveParty='saveParty'}}
