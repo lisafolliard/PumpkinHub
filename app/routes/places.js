@@ -6,9 +6,37 @@ export default Ember.Route.extend({
   },
   actions: {
     savePlace(params) {
+      var geocoder = new google.maps.Geocoder();
       var newPlace = this.store.createRecord('place', params);
-      newPlace.save();
+
+      geocoder.geocode( {'address': newPlace.get('address') }, function(results, status) {
+
+        if (status === google.maps.GeocoderStatus.OK) {
+
+          newPlace.set('coordinates', results[0].geometry.location);
+
+          newPlace.save();
+
+        } else {
+
+          alert("Geocode was not successful for the following reason: " + status);
+
+        }
+      });
+
+
+
       this.transitionTo('places');
     }
   }
 });
+
+    //
+    // updatePost(post, params) {
+    //   Object.keys(params).forEach(function(key) {
+    //     if(params[key] !== undefined) {
+    //       post.set(key, params[key]);
+    //     }
+    //   });
+    //   post.save();
+    //   this.transitionTo('post', params.post);

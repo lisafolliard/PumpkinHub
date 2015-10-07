@@ -4,6 +4,7 @@ export default Ember.Component.extend({
 
   actions: {
     showMap(model) {
+      debugger;
       var pumpkinMarker = new google.maps.MarkerImage(
         'assets/images/logo.png',
         null, /* size is determined at runtime */
@@ -14,27 +15,31 @@ export default Ember.Component.extend({
 
       var container = this.$('.map-display')[0];
       var options = {
-        center: this.get('map').center(45.5200, -122.6819),
+        center: this.get('map').center(
+          model.get('coordinates').H,
+          model.get('coordinates').L
+        ),
         zoom: 10
       };
-      var newMap = this.get('map').findMap(container, options);
 
-      var address = model.get('address');
-
-      var geocoder = new google.maps.Geocoder();
-
-      geocoder.geocode( {'address': address}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-          newMap.setCenter(results[0].geometry.location);
-          var marker = new google.maps.Marker({
-            map: newMap,
-            position: results[0].geometry.location,
-            icon: pumpkinMarker
-          });
-        } else {
-          alert("Geocode was not successful for the following reason: " + status);
-        }
-      });
+      this.get('map').findMap(container, options);
+      //
+      // var address = model.get('address');
+      //
+      // var geocoder = new google.maps.Geocoder();
+      //
+      // geocoder.geocode( {'address': address}, function(results, status) {
+      //   if (status == google.maps.GeocoderStatus.OK) {
+      //     newMap.setCenter(results[0].geometry.location);
+      //     var marker = new google.maps.Marker({
+      //       map: newMap,
+      //       position: results[0].geometry.location,
+      //       icon: pumpkinMarker
+      //     });
+      //   } else {
+      //     alert("Geocode was not successful for the following reason: " + status);
+      //   }
+      // });
     }
   }
 });
