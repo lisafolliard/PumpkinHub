@@ -101,3 +101,7 @@ ul {
   margin: auto;
   /*text-align: center;*/
 }
+
+button.party.btn {
+  margin-top: 2%;
+}

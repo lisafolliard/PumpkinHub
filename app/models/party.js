@@ -8,5 +8,5 @@ export default DS.Model.extend({
   startTime: DS.attr(),
   endTime: DS.attr(),
   ageGroup: DS.attr(),
-  details: DS.attr
+  details: DS.attr()
 });

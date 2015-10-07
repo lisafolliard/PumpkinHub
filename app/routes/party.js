@@ -8,7 +8,12 @@ export default Ember.Route.extend({
   actions: {
     saveParty(params) {
       var newParty = this.store.createRecord('party', params);
-      newPantry.save();
+      newParty.save();
+      this.transitionTo('party');
+    },
+
+    destroyParty(party) {
+      party.destroyRecord();
       this.transitionTo('party');
     }
   }
