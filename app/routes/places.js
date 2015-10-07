@@ -19,24 +19,12 @@ export default Ember.Route.extend({
 
         } else {
 
-          alert("Geocode was not successful for the following reason: " + status);
+          alert("Save failed. Geocode was not successful for the following reason: " + status);
 
         }
       });
-
-
 
       this.transitionTo('places');
     }
   }
 });
-
-    //
-    // updatePost(post, params) {
-    //   Object.keys(params).forEach(function(key) {
-    //     if(params[key] !== undefined) {
-    //       post.set(key, params[key]);
-    //     }
-    //   });
-    //   post.save();
-    //   this.transitionTo('post', params.post);

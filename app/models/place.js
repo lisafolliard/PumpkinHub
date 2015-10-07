@@ -2,8 +2,6 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   address: DS.attr(),
-  // latitude: DS.attr('number'),
-  // longitude: DS.attr('number'),
   coordinates: DS.attr(),
   image: DS.attr(),
   name: DS.attr(),
