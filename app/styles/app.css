@@ -154,3 +154,8 @@ button.party.btn {
 button {
   align: center;
 }
+
+.map-canvas {
+  height: 500px;
+  width: 500px;
+}
