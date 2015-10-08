@@ -1,7 +1,11 @@
-{{#each model as |place|}}
-  {{#link-to 'place' place.id}}
-    {{place-tile place=place}}
-  {{/link-to}}
+<div class='transbox'>
+  <br>
+  {{#each model as |place|}}
+    {{#link-to 'place' place.id}}
+      {{place-tile place=place}}
+    {{/link-to}}
 {{/each}}
 
-{{new-place savePlace="savePlace" place=model}}
+  {{new-place savePlace="savePlace" place=model}}
+  <br>
+</div>
