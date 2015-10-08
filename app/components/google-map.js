@@ -13,8 +13,12 @@ export default Ember.Component.extend({
         new google.maps.Size(25, 25)
       );
 
-      var lat = model.get('coordinates').H;
-      var lng = model.get('coordinates').L;
+      var coords = model.get('coordinates');
+
+      var keys = Object.keys(coords);
+
+      var lat = coords[keys[0]];
+      var lng = coords[keys[1]];
 
       var container = this.$('.map-display')[0];
       var options = {
@@ -24,7 +28,6 @@ export default Ember.Component.extend({
         ),
         zoom: 10
       };
-
 
       var placeMap = this.get('map').findMap(container, options);
 
