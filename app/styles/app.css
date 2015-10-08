@@ -19,12 +19,36 @@
     margin: auto;
 }*/
 
+body {
+  /*background-color: rgba(255, 181, 95, .5);*/
+}
+
+p {
+  font-family: Helvetica;
+}
+
 .jumbotron {
-  background-image: url("/assets/images/jumbotron.jpeg");
+  background-image: url("/assets/images/fall-leaves.jpg");
+  /*background-position: 50% 70%;*/
   background-size: cover;
-  color: #fff;
+  color: #000;
   z-index: 0;
   position: relative;
+  /*font-family: 'Calligraffitti', cursive;*/
+  /*font-family: 'Berkshire Swash', cursive;*/
+  font-family: 'Just Me Again Down Here', cursive, serif;
+  /*font-family: 'Condiment', cursive;*/
+  /*font-family: 'Patrick Hand SC', cursive;*/
+}
+
+.jumbotron h1 {
+  font-size: 5em;
+}
+
+h5 {
+  font-family: 'Just Me Again Down Here', cursive, serif;
+  font-size: 2.5em;
+  padding-bottom: 5%;
 }
 
 /*.jumbotron-overlay {
@@ -38,6 +62,14 @@ div.img-div{
     width:250px;
     overflow:hidden;
     border-radius:50%;
+    margin: auto;
+}
+
+div.item-div{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
     margin: auto;
 }
 
@@ -70,7 +102,7 @@ div.img-div{
   text-overflow: ellipsis;
   display: block;
   text-align: center;
-  margin-top: 2em;
+  /*margin-top: 2em;*/
 }
 
 #nav-icon-list {
