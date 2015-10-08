@@ -2,11 +2,18 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('post');
+    return Ember.RSVP.hash({
+      post: this.store.findAll('post'),
+      place: this.store.findAll('place')
+    })
   },
   actions: {
     destroyPost(post) {
       post.destroyRecord();
+      this.transitionTo('admin');
+    },
+    destroyPlace(place) {
+      place.destroyRecord();
       this.transitionTo('admin');
     },
     save(params) {

@@ -1,25 +1,46 @@
 <div class="container">
-  <table>
-    <tr width>
+  <table width="60%">
+    <tr>
       <th width="80%">
         <h3>
-          Title
+          Posts
         </h3>
       </th>
       <th width="20%">
       </th>
     </tr>
-    {{#each model as |post|}}
+    {{#each model.post as |post|}}
       <tr>
         <td width="80%">
           {{post.title}}
         </td>
         <td width="20%" class="text-center">
-          <button class="btn btn-float-right" {{action 'destroyPost' post}}>Delete</button>
+          <button class="btn" {{action 'destroyPost' post}}>Delete</button>
+        </td>
+      </tr>
+    {{/each}}
+  </table>
+{{new-post save="save"}}
+
+  <table width="60%">
+    <tr>
+      <th width="80%">
+        <h3>
+          Places
+        </h3>
+      </th>
+      <th width="20%">
+      </th>
+    </tr>
+    {{#each model.place as |place|}}
+      <tr>
+        <td width="80%">
+          {{place.name}}
+        </td>
+        <td width="20%" class="text-center">
+          <button class="btn" {{action 'destroyPlace' place}}>Delete</button>
         </td>
       </tr>
     {{/each}}
   </table>
 </div>
-
-{{new-post save="save"}}
