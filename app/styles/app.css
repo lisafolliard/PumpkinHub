@@ -181,3 +181,7 @@ div.transbox {
   opacity:0.8;
   text-align: center;
 }
+
+footer li {
+  display: inline-block;
+}

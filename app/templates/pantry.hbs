@@ -1,13 +1,14 @@
 <div class='transbox'>
-  <div class='pantry-container'>
   <br>
-    <ul>
+  <!-- <div class='row'> -->
+    <!-- <ul> -->
     {{#each model as |pantry|}}
-      <li>{{pantry-tile pantry=pantry destroyPantry="destroyPantry"}}</li>
+      {{pantry-tile pantry=pantry destroyPantry="destroyPantry"}}
     {{/each}}
-    </ul>
-
-  {{new-pantry savePantry='savePantry'}}
+    <!-- </ul> -->
+  <!-- </div> -->
+  <!-- <div class='row'> -->
+    {{new-pantry savePantry='savePantry'}}
+  <!-- </div> -->
   <br>
-  </div>
 </div>
