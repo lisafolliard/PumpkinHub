@@ -1,11 +1,14 @@
 
 <div class="container place-container post-container">
+  <div class="row">
 
+<div class="col-md-4">
   <div class="img-div">
     <img src={{model.image}} class="post-image">
   </div>
+</div>
 
-  <div class="row">
+<div class="col-md-4">
     <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 text-center">
 
       <h3>
@@ -37,8 +40,12 @@
       </p>
 
 
-      {{google-map model=model}}
-    </div>
-  </div>
 
+    </div>
+
+</div>
+<div class="col-md-4">
+  {{google-map model=model}}
+</div>
+</div>
 </div>
