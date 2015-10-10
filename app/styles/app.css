@@ -39,9 +39,9 @@ body {
 }*/
 
 .jumbotron p {
-  font-family: Tahoma;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.75em;
-  color: black;
+  color: #c5780f;
 }
 
 .jumbotron {
